@@ -1,7 +1,7 @@
 mod utils;
 
-use browserslist::{Opts, resolve};
 use wasm_bindgen::prelude::*;
+use browserslist::{Opts, resolve};
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
@@ -10,11 +10,11 @@ use wasm_bindgen::prelude::*;
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
-pub fn browserslist(query: String, opts: JsValue) -> Result<JsValue, JsValue> {
-    let opts: Option<Opts> = opts.into_serde().unwrap_or_default();
+pub fn browserslist_wasm(query: String, opts: JsValue) -> Result<JsValue, JsValue> {
+    let opts_resolve: Option<Opts> = opts.into_serde().unwrap_or_default();
 
     serde_wasm_bindgen::to_value(
-        &resolve([query], &opts.unwrap_or_default())
+        &resolve([query], &opts_resolve.unwrap_or_default())
             .map_err(|e| format!("{}", e))?
             .into_iter()
             .map(|d| d.to_string())
