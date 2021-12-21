@@ -1399,9 +1399,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^1.0.0-next.30":
-  version: 1.0.0-next.31
-  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.0-next.31"
+"@sveltejs/vite-plugin-svelte@npm:^1.0.0-next.32":
+  version: 1.0.0-next.32
+  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.0-next.32"
   dependencies:
     "@rollup/pluginutils": ^4.1.1
     debug: ^4.3.3
@@ -1412,11 +1412,11 @@ __metadata:
   peerDependencies:
     diff-match-patch: ^1.0.5
     svelte: ^3.44.0
-    vite: ^2.6.0
+    vite: ^2.7.0
   peerDependenciesMeta:
     diff-match-patch:
       optional: true
-  checksum: 6b3f196f8540a663421d0007dc8c3a3fe0e33ac6c37106b1d3de15aaf9a56fb03b11385a675e0e7736a0ec742e8d5cca15d671f848927b274c4508695464cd47
+  checksum: 552cad8d1377aa951fe706e1a47150ddba70326993c0d1bd0d6625e2f7bbfe6f4599efd05faab24f7e3a45e6972bbd12a2f4170473e7a08c25d1f4f97c6d9a93
   languageName: node
   linkType: hard
 
@@ -1732,16 +1732,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "browserlist@workspace:."
   dependencies:
-    "@sveltejs/vite-plugin-svelte": ^1.0.0-next.30
-    eslint: ^8.4.1
+    "@sveltejs/vite-plugin-svelte": ^1.0.0-next.32
+    eslint: ^8.5.0
     eslint-plugin-import: ^2.25.3
     eslint-plugin-svelte3: ^3.2.1
     prettier: ^2.5.1
-    prettier-plugin-svelte: ^2.5.0
-    svelte: ^3.44.0
-    vite: ^2.7.0
-    vite-plugin-pwa: ^0.11.10
-    wasm-pack: ^0.10.1
+    prettier-plugin-svelte: ^2.5.1
+    svelte: ^3.44.3
+    vite: ^2.7.4
+    vite-plugin-pwa: ^0.11.12
+    wasm-pack: ^0.10.2
   languageName: unknown
   linkType: soft
 
@@ -1835,7 +1835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0, chalk@npm:^4.1.2":
+"chalk@npm:^4.0.0":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -2437,9 +2437,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.4.1":
-  version: 8.4.1
-  resolution: "eslint@npm:8.4.1"
+"eslint@npm:^8.5.0":
+  version: 8.5.0
+  resolution: "eslint@npm:8.5.0"
   dependencies:
     "@eslint/eslintrc": ^1.0.5
     "@humanwhocodes/config-array": ^0.9.2
@@ -2481,7 +2481,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: d962cd7cd0f68ddc2412f47154b8992ad3af987cf47fa6e60e51a2b7d32a91f934388f7d29e2c45b16b7ac69f0d220d0a483189ec6ba43a8a480110c34f158f9
+  checksum: c1a9e26070520a308cc30b62ba0d37d5b115ed23987a93219819537bdea9398e6ebe57c27d97be36ecc83b5162c72e82ecb0a9e5b44b7992980f9be90eb5c4b3
   languageName: node
   linkType: hard
 
@@ -3773,14 +3773,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.11":
-  version: 8.4.4
-  resolution: "postcss@npm:8.4.4"
+"postcss@npm:^8.4.5":
+  version: 8.4.5
+  resolution: "postcss@npm:8.4.5"
   dependencies:
     nanoid: ^3.1.30
     picocolors: ^1.0.0
     source-map-js: ^1.0.1
-  checksum: 6cf3fe0ecdf5a0d2aeb5e8404938c7eab968704e2e29dc5421e90b4014eb1975c1c0ad828425f2428807ef6e3fcfadd71f988ab55cb06c28ac2866f22403255b
+  checksum: b78abdd89c10f7b48f4bdcd376104a19d6e9c7495ab521729bdb3df315af6c211360e9f06887ad3bc0ab0f61a04b91d68ea11462997c79cced58b9ccd66fac07
   languageName: node
   linkType: hard
 
@@ -3791,13 +3791,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-svelte@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "prettier-plugin-svelte@npm:2.5.0"
+"prettier-plugin-svelte@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "prettier-plugin-svelte@npm:2.5.1"
   peerDependencies:
     prettier: ^1.16.4 || ^2.0.0
     svelte: ^3.2.0
-  checksum: 0c9bf251c330f354aeda12e67ccf0a424345980a50a5cac2a99b87d50adceefd558719692b79e3274ee42e40aa4e0b44c8a9fa6b6908297b3ea7006b2ebcd90b
+  checksum: 433c0008749043a0ef16ecc27371db9cdd616b700d071e8f26fc933d23e466b2703b129643fabe1072151cf84dfb6ccad39d0baaa9f93f522d3e6bebb5a06d9e
   languageName: node
   linkType: hard
 
@@ -4036,7 +4036,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.43.1, rollup@npm:^2.59.0, rollup@npm:^2.60.0":
+"rollup@npm:^2.43.1, rollup@npm:^2.59.0":
   version: 2.60.2
   resolution: "rollup@npm:2.60.2"
   dependencies:
@@ -4047,6 +4047,20 @@ __metadata:
   bin:
     rollup: dist/bin/rollup
   checksum: bcd41dfe8afb7e0d97ce2237752165bdda689bcce6321d96821d565de3e0c865a49b544923f315985be2bfde086f72b54aae4ae7c87f798b3cb9558a5bec4e65
+  languageName: node
+  linkType: hard
+
+"rollup@npm:^2.60.2":
+  version: 2.61.1
+  resolution: "rollup@npm:2.61.1"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: a41bd821c1d9f296e71e867828150080fb05d08cbdff9b6b5c0e3642da4d0723f7a847189f197c2a695a8a353d968ad89ebd54a4228dc3e92765c00e6bbadf87
   languageName: node
   linkType: hard
 
@@ -4381,10 +4395,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^3.44.0":
-  version: 3.44.2
-  resolution: "svelte@npm:3.44.2"
-  checksum: 912b186e113bbcc58442066be43a9c9d2ada43945eacfb90733c7454e6c5286014f66ced4222f8040e0c930289a47c83b4cda10226e2805479f8bfba9076812a
+"svelte@npm:^3.44.3":
+  version: 3.44.3
+  resolution: "svelte@npm:3.44.3"
+  checksum: ea5972df35b5dce91dde1b6f621be359e058557e89297a83955ff613f9fd20de7b994ec3deb5cce304eb59fc7d3c97de2b9751524f655f4a1fd4f10064c27129
   languageName: node
   linkType: hard
 
@@ -4613,32 +4627,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-pwa@npm:^0.11.10":
-  version: 0.11.10
-  resolution: "vite-plugin-pwa@npm:0.11.10"
+"vite-plugin-pwa@npm:^0.11.12":
+  version: 0.11.12
+  resolution: "vite-plugin-pwa@npm:0.11.12"
   dependencies:
-    chalk: ^4.1.2
-    debug: ^4.3.2
+    debug: ^4.3.3
     fast-glob: ^3.2.7
     pretty-bytes: ^5.6.0
-    rollup: ^2.60.0
-    workbox-build: ^6.4.0
-    workbox-window: ^6.4.0
+    rollup: ^2.60.2
+    workbox-build: ^6.4.2
+    workbox-window: ^6.4.2
   peerDependencies:
     vite: ^2.0.0
     workbox-build: ^6.4.0
     workbox-window: ^6.4.0
-  checksum: 67d9bc9ff495022f71dcc6288dbbddbe03e06a6deadfcbe9d3cbd110ce3a372d41c424047470f33789c2042868678773d67fb5dbc89480a7c3dbbd87b0bfd870
+  checksum: 03fc559ac0f2ecc8457cd125d592f2ad47c2bb08913a17fc961fd1f27eb6c90738e428dcdbf19db3a03d48bb9eedfd3c83d3d4e389ea4ee5dc7479c5e2576c10
   languageName: node
   linkType: hard
 
-"vite@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "vite@npm:2.7.0"
+"vite@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "vite@npm:2.7.4"
   dependencies:
     esbuild: ^0.13.12
     fsevents: ~2.3.2
-    postcss: ^8.3.11
+    postcss: ^8.4.5
     resolve: ^1.20.0
     rollup: ^2.59.0
   peerDependencies:
@@ -4657,18 +4670,18 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 147e1cf3c90971febd9edc978e912edcc501896208f3e37df0c6c3cdd55d76a41372d1cc4ef789f7eeb18d09786113d9a37a82f2a537bb294ad2608e5294d8bd
+  checksum: 7e2ee43688a7ee8ef46b9d3a9469a7f3c70f134302e5c71ecc06adc2e88a9e9139c5c3d36c83f355a0fa6038bfc6250d07cb88ddfcfa2af8fc18b9444686cc34
   languageName: node
   linkType: hard
 
-"wasm-pack@npm:^0.10.1":
-  version: 0.10.1
-  resolution: "wasm-pack@npm:0.10.1"
+"wasm-pack@npm:^0.10.2":
+  version: 0.10.2
+  resolution: "wasm-pack@npm:0.10.2"
   dependencies:
     binary-install: ^0.1.0
   bin:
     wasm-pack: run.js
-  checksum: ed4b6888798cee1613ae56e65a1256bd2c98ebd2c3e90a74332c8ad6c9c863f7159ed6c7bbf157b830e9ca1444d249b3cb508bbebe6303259b957ec71b6d2831
+  checksum: 18ff3bf91fdafbe24570665ca761d1a90f264e902ac6c05b5dae0ba64622ce4c64488dfa89093f958cb6edfa77a1d30659cf69977a1eba8ce0c250ba4a896f58
   languageName: node
   linkType: hard
 
@@ -4749,7 +4762,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-build@npm:^6.4.0":
+"workbox-build@npm:^6.4.2":
   version: 6.4.2
   resolution: "workbox-build@npm:6.4.2"
   dependencies:
@@ -4911,7 +4924,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-window@npm:6.4.2, workbox-window@npm:^6.4.0":
+"workbox-window@npm:6.4.2, workbox-window@npm:^6.4.2":
   version: 6.4.2
   resolution: "workbox-window@npm:6.4.2"
   dependencies:
