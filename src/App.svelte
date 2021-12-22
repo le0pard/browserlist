@@ -1,6 +1,16 @@
 <script>
   import {memoize} from './memoize'
   import init, {browserslist_wasm as browserslistWasm} from './wasm'
+  import {registerSW} from 'virtual:pwa-register'
+
+  const updateSW = registerSW({
+    onNeedRefresh() {
+      console.log('onNeedRefresh')
+    },
+    onOfflineReady() {
+      console.log('onOfflineReady')
+    },
+  })
 
   let browserInput = '>0.3%, Firefox ESR, not dead'
 
