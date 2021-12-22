@@ -1,16 +1,7 @@
 <script>
   import {memoize} from './memoize'
   import init, {browserslist_wasm as browserslistWasm} from './wasm'
-  import {registerSW} from 'virtual:pwa-register'
-
-  const updateSW = registerSW({
-    onNeedRefresh() {
-      console.log('onNeedRefresh')
-    },
-    onOfflineReady() {
-      console.log('onOfflineReady')
-    },
-  })
+  import ReloadPrompt from './ReloadPrompt.svelte'
 
   let browserInput = '>0.3%, Firefox ESR, not dead'
 
@@ -44,6 +35,7 @@
 </style>
 
 <main>
+  <ReloadPrompt />
   <div class="input-wrapper">
     <input class="input" bind:value={browserInput} />
   </div>
