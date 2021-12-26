@@ -38,15 +38,10 @@ jobs:
             v1-${{ runner.os }}-yarn-
 
       - name: Restore rust cache
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.cargo/bin/
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ~/.cargo/git/db/
-            browserslist-wasm/target/
-          key: v1-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+        uses: Swatinem/rust-cache@v1
+        working-directory: ./browserslist-wasm
+        target-dir: ./browserslist-wasm/target
+        key: v1-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Install Javascript dependencies
         run: yarn install --immutable
