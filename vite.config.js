@@ -11,7 +11,6 @@ export default defineConfig({
     svelte({}),
     VitePWA({
       strategies: 'injectManifest',
-      registerType: 'autoUpdate',
       includeAssets: [],
       manifest: {
         name: 'Browserlist',
