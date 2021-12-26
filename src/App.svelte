@@ -3,7 +3,7 @@
   import init, {browserslist_wasm as browserslistWasm} from './wasm'
   import ReloadPrompt from './ReloadPrompt.svelte'
 
-  let browserInput = '>0.3%, Firefox ESR, not dead'
+  let browserInput = '>0.3%, not IE 11, not dead'
   let browsersResult = ''
   let timeout = null
 
