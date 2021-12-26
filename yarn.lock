@@ -1740,7 +1740,7 @@ __metadata:
     prettier: ^2.5.1
     prettier-plugin-svelte: ^2.5.1
     svelte: ^3.44.3
-    vite: ^2.7.4
+    vite: ^2.7.7
     vite-plugin-pwa: ^0.11.12
     wasm-pack: ^0.10.2
   languageName: unknown
@@ -4653,9 +4653,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^2.7.4":
-  version: 2.7.4
-  resolution: "vite@npm:2.7.4"
+"vite@npm:^2.7.7":
+  version: 2.7.7
+  resolution: "vite@npm:2.7.7"
   dependencies:
     esbuild: ^0.13.12
     fsevents: ~2.3.2
@@ -4678,7 +4678,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 7e2ee43688a7ee8ef46b9d3a9469a7f3c70f134302e5c71ecc06adc2e88a9e9139c5c3d36c83f355a0fa6038bfc6250d07cb88ddfcfa2af8fc18b9444686cc34
+  checksum: ce7fd044b9bf29cad6a4ac0505b28d6f75cb461362d678898e78db8ff57763358c35914058c2c563548772fd714713dd8b61248d99759b64ef7576c12cd02401
   languageName: node
   linkType: hard
 
