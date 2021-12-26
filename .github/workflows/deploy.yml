@@ -42,13 +42,12 @@ jobs:
         with:
           working-directory: browserslist-wasm
           target-dir: browserslist-wasm/target
-          key: v1-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Install Javascript dependencies
         run: yarn install --immutable
 
       # - name: Run eslint linter
-      #   run: yarn eslint
+      #   run: yarn lint
 
       - name: Build wasm
         run: yarn wasm:release
