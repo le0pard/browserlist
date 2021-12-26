@@ -44,6 +44,7 @@
   .result {
     margin: 0.5rem 0;
     font-size: 2rem;
+    line-height: 2.5rem;
   }
 </style>
 
@@ -53,7 +54,7 @@
   </div>
   <div class="result">
     {#await loadWasm()}
-      <p>Load wasm...</p>
+      Load wasm...
     {:then}
       {#if browsersResult}
         Result: {browsersResult}

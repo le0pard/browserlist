@@ -1,0 +1,15 @@
+@import "normalize.css/normalize";
+
+html {
+  font-size: responsive 14px 18px;
+  font-range: 420px 1440px;
+}
+
+body {
+  font-family: system-ui;
+  font-weight: 400;
+  line-height: 1.5rem;
+  /* background-color: var(--bgColor);
+  color: var(--baseColor); */
+}
+
