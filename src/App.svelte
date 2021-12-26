@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte'
   import {memoize} from './utils/memoize'
   import init, {browserslist_wasm as browserslistWasm} from './wasm'
   import ReloadPrompt from './ReloadPrompt.svelte'
@@ -7,8 +6,6 @@
   let browserInput = '>0.3%, Firefox ESR, not dead'
   let browsersResult = ''
   let timeout = null
-
-  const loadWasm = memoize(init)
 
   const getBrowserList = () => {
     try {
@@ -18,16 +15,18 @@
     }
   }
 
-  const debounceBrowserList = (wait = 300) => {
-    clearTimeout(timeout)
-    timeout = setTimeout(() => {
-      browsersResult = getBrowserList()
-    }, wait)
+  const updateResultsForBrowsers = () => {
+    browsersResult = getBrowserList()
   }
 
-  onMount(() => {
-    debounceBrowserList()
-  })
+  const debounceBrowserList = (wait = 300) => {
+    clearTimeout(timeout)
+    timeout = setTimeout(() => updateResultsForBrowsers(), wait)
+  }
+
+  const loadWasm = memoize(() => (
+    init().then(() => updateResultsForBrowsers())
+  ))
 </script>
 
 <style>
