@@ -55,7 +55,11 @@
     {#await loadWasm()}
       <p>Load wasm...</p>
     {:then}
-      Result: {browsersResult}
+      {#if browsersResult}
+        Result: {browsersResult}
+      {:else}
+        No browsers for provided browserslist
+      {/if}
     {:catch error}
       <p style="color: red">{error.message}</p>
     {/await}
