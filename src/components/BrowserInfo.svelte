@@ -16,11 +16,9 @@
 </style>
 
 <div>
-  {#if browserInfo.name}
-    {#if browserInfo.icon}
-      <img class="icon" src="{browserInfo.icon}" alt="{browserInfo.name}" />
-    {/if}
-    {browserInfo.name}
+  {#if browserInfo.icon}
+    <img class="icon" src="{browserInfo.icon}" alt="{browserInfo.name}" />
   {/if}
+  {browserInfo.name}
 </div>
 
