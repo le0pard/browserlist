@@ -1230,6 +1230,111 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@browser-logos/android-webview@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@browser-logos/android-webview@npm:1.0.2"
+  checksum: 06041b3187b9bc57f07b283e33168213e60eba18ebce0c950be149d738f976112d3e3991b37c28f8592d0445f3d9b46a5dd5984611c26a48258522d08a72e24d
+  languageName: node
+  linkType: hard
+
+"@browser-logos/chrome@npm:^1.0.18":
+  version: 1.0.18
+  resolution: "@browser-logos/chrome@npm:1.0.18"
+  checksum: 37175578243f20df212f1f62e6ef61b35c91b5fa579159bc0ef1fa6f6941871fb172c52f537ed20a9c5632bdad5dbcba59b887e5806a2f75f4b751b4590b22d2
+  languageName: node
+  linkType: hard
+
+"@browser-logos/edge@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@browser-logos/edge@npm:2.0.5"
+  checksum: 089f41e596a3cfeb01cb92a449b45b1b49a228c362d62150712f9525d1b50794074d0a0603416cad5da5223eefbd94c35903cdbc9d27a4f3e12bc7f4abdeacc9
+  languageName: node
+  linkType: hard
+
+"@browser-logos/firefox@npm:^3.0.9":
+  version: 3.0.9
+  resolution: "@browser-logos/firefox@npm:3.0.9"
+  checksum: 167200b2ec8ec40b4468ceaaae93d30cc49decc25053e5f3aa8a6d6ace4a68c2d4c89a672db537da921c33bc2ae99b7e4cf7a2f2a1116e3a29a4333ba7cded46
+  languageName: node
+  linkType: hard
+
+"@browser-logos/internet-explorer_6@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "@browser-logos/internet-explorer_6@npm:1.0.9"
+  checksum: 653b8a19b0c7afa929dd0d5eb0946373709e2d7d44772048f033639ff863babf56a21e51ea92293322521dbb834a8a6c7ce60cbfdecd9ec883eafa8c0b2e43bb
+  languageName: node
+  linkType: hard
+
+"@browser-logos/internet-explorer_7-8@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "@browser-logos/internet-explorer_7-8@npm:1.0.7"
+  checksum: ce8839e6c8ce3dd798eccc4612ab447b5042b89fd92e19a632e0ee4e7935e1016abc6562c8c5f592995ba758711a4f81db2484421784c97c5228f8d49da52c4e
+  languageName: node
+  linkType: hard
+
+"@browser-logos/internet-explorer_9-11@npm:^1.1.16":
+  version: 1.1.16
+  resolution: "@browser-logos/internet-explorer_9-11@npm:1.1.16"
+  checksum: 74d62f44fbfa147d54bfc38fa16e4475404606947ee02c400e8a7497dabc963276a9e3d2f6774236810ad0d72275092cb2d1f73f4087dcc51c070ea35faeb754
+  languageName: node
+  linkType: hard
+
+"@browser-logos/node.js@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@browser-logos/node.js@npm:1.0.1"
+  checksum: f19aa4dec86795551de12ac8d9c760259658d142db15cd1fa221247af96db907528bae145ae1660ed406cf6eae2fd09475679907a19e9bea572169e24d0fa27b
+  languageName: node
+  linkType: hard
+
+"@browser-logos/opera-mini@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "@browser-logos/opera-mini@npm:1.0.7"
+  checksum: e9c8b6ffe79785d6dc42faeaa1f06dda0f831d50e1f407f884d9d4d3aa1b4e6c3ea7b43397b70912571e7764518bbabb1c4779dfcb126495f2303e5f08912972
+  languageName: node
+  linkType: hard
+
+"@browser-logos/opera@npm:^1.1.11":
+  version: 1.1.11
+  resolution: "@browser-logos/opera@npm:1.1.11"
+  checksum: e6473433415b61c7235ef1120405c231b323b86b12267ae21a40ec092fa0685301481b14b1c09133f3cee93e619d8f7639574323d8e1ec258725c03ef75b8b13
+  languageName: node
+  linkType: hard
+
+"@browser-logos/safari-ios@npm:^1.0.15":
+  version: 1.0.15
+  resolution: "@browser-logos/safari-ios@npm:1.0.15"
+  checksum: 8cab8d8299b07138b2bde691a130ba1c6b256c774a20d48b03ea9974792ccdf1e30ac7b319a594dde79f05d8f55967fbe0bbab40089e6727cb78ab82e1fac8d7
+  languageName: node
+  linkType: hard
+
+"@browser-logos/safari@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@browser-logos/safari@npm:2.1.0"
+  checksum: cbf30c372d0feaa45282ae7f3041f97af641dff8e2141e16ab33154dea890b276301b4291aeafaa76a8abf6d4534c940c6028aecca201530475f344e0b7e2f00
+  languageName: node
+  linkType: hard
+
+"@browser-logos/samsung-internet@npm:^4.0.6":
+  version: 4.0.6
+  resolution: "@browser-logos/samsung-internet@npm:4.0.6"
+  checksum: 17a1286c511a1d1e93b0c54949f5a219c5d57c534c4ca6d804928681ee7515acc4118e8de17dcf4849089665f975d40352da6a55f269cb90f29ceb9b2e3e9bda
+  languageName: node
+  linkType: hard
+
+"@browser-logos/uc@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@browser-logos/uc@npm:1.1.0"
+  checksum: 8351dd294e9ae1f8f760f6aeba066e6c3faff2974d4e37c325d75563149b6e6ed1382cc09e3df3dd885366473e213e6b0ddfaa115d198db8788635564f3e7454
+  languageName: node
+  linkType: hard
+
+"@browser-logos/web@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@browser-logos/web@npm:3.0.0"
+  checksum: c5315e0b574cab0cd96b4af04fa5bfd9da1902472e83121f8fc1d1b55371fb65eedb7387419b74487e2a563d69fb94a8f30c33e58d77e0a10cee0cb483231d8d
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^1.0.5":
   version: 1.0.5
   resolution: "@eslint/eslintrc@npm:1.0.5"
@@ -1773,6 +1878,21 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "browserlist@workspace:."
   dependencies:
+    "@browser-logos/android-webview": ^1.0.2
+    "@browser-logos/chrome": ^1.0.18
+    "@browser-logos/edge": ^2.0.5
+    "@browser-logos/firefox": ^3.0.9
+    "@browser-logos/internet-explorer_6": ^1.0.9
+    "@browser-logos/internet-explorer_7-8": ^1.0.7
+    "@browser-logos/internet-explorer_9-11": ^1.1.16
+    "@browser-logos/node.js": ^1.0.1
+    "@browser-logos/opera": ^1.1.11
+    "@browser-logos/opera-mini": ^1.0.7
+    "@browser-logos/safari": ^2.1.0
+    "@browser-logos/safari-ios": ^1.0.15
+    "@browser-logos/samsung-internet": ^4.0.6
+    "@browser-logos/uc": ^1.1.0
+    "@browser-logos/web": ^3.0.0
     "@sveltejs/vite-plugin-svelte": ^1.0.0-next.32
     eslint: ^8.5.0
     eslint-plugin-import: ^2.25.3
