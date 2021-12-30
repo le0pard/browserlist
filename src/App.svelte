@@ -68,7 +68,10 @@
     color: var(--inputFocusColor);
     background-color: var(--inputFocusBgColor);
     border-color: var(--inputFocusBorderColor);
-    outline: 0;
+  }
+
+  .main-input:focus:not(:focus-visible) {
+    outline: none;
   }
 
   @keyframes loader-animation {
