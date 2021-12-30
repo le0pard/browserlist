@@ -71,6 +71,41 @@
     outline: 0;
   }
 
+  @keyframes loader-animation {
+    0% {background-position: right}
+  }
+
+  .loader-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loader {
+    width: 120px;
+    height:20px;
+    background: linear-gradient(90deg,var(--baseColor) 33%,#0005 50%,var(--baseColor) 66%) var(--bgColor);
+    background-size: 300% 100%;
+    animation: loader-animation 1s infinite linear;
+  }
+
+  .loader-text {
+    font-size: 1rem;
+  }
+
+  .error-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .error-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dangerColor);
+  }
+
   .result {
     margin: 0.5rem 0;
     font-size: 2rem;
@@ -82,6 +117,12 @@
     display: grid;
     grid-gap: 0.3rem;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .empty-results-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: 500px) {
@@ -133,7 +174,10 @@
   </div>
   <div class="result">
     {#await loadWasm()}
-      Load wasm...
+      <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-text">Load wasm module...</div>
+      </div>
     {:then}
       {#if browsersResult}
         <div class="results-list">
@@ -142,10 +186,14 @@
           {/each}
         </div>
       {:else}
-        No browsers for provided browserslist
+        <div class="empty-results-wrapper">
+          <div class="empty-results-text">No browsers for provided browserslist</div>
+        </div>
       {/if}
     {:catch error}
-      <p style="color: red">{error.message}</p>
+      <div class="error-wrapper">
+        <div class="error-text">Error to load wasm module: {error.message}</div>
+      </div>
     {/await}
   </div>
 </main>

@@ -16,6 +16,7 @@
   --buttonBorderColor: #ccc;
   --buttonHoverColor: #333;
   --buttonHoverBgColor: #e7e7e7;
+  --dangerColor: #f62d51;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +36,7 @@
     --buttonBorderColor: #000;
     --buttonHoverColor: #bbc4cc;
     --buttonHoverBgColor: #202020;
+    --dangerColor: #f62d51;
   }
 }
 
