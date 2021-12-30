@@ -3,21 +3,14 @@
 <script>
   import {useRegisterSW} from 'virtual:pwa-register/svelte'
 
-  const {offlineReady, needRefresh, updateServiceWorker} = useRegisterSW({
-    onRegistered(swr) {
-      console.log(`SW registered: ${swr}`);
-    },
-    onRegisterError(error) {
-      console.log('SW registration error', error);
-    }
-  });
+  const {offlineReady, needRefresh, updateServiceWorker} = useRegisterSW({})
 
-  function close() {
+  const close = () => {
     offlineReady.set(false)
     needRefresh.set(false)
   }
 
-  $: toast = $offlineReady || $needRefresh;
+  $: toast = $offlineReady || $needRefresh
 </script>
 
 <style>

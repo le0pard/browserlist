@@ -1,11 +1,7 @@
 <svelte:options immutable="{true}" />
 
 <script>
-  import {browserInfoFromStr} from '@utils/browsers'
-
-  export let browserString = null
-
-  let browserInfo = browserInfoFromStr(browserString)
+  export let browserInfo
 </script>
 
 <style>
@@ -16,9 +12,7 @@
 </style>
 
 <div>
-  {#if browserInfo.icon}
-    <img class="icon" src="{browserInfo.icon}" alt="{browserInfo.name}" />
-  {/if}
+  <img class="icon" src="{browserInfo.icon}" alt="{browserInfo.name}" />
   {browserInfo.name}
 </div>
 

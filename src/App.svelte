@@ -2,6 +2,7 @@
 
 <script>
   import {memoize} from '@utils/memoize'
+  import {browserInfoFromStr, sortBrowsers} from '@utils/browsers'
   import init, {browserslist_wasm as browserslistWasm} from './wasm'
   import ReloadPrompt from './components/ReloadPrompt.svelte'
   import BrowserInfo from './components/BrowserInfo.svelte'
@@ -12,7 +13,7 @@
 
   const getBrowserList = () => {
     try {
-      return browserslistWasm(browserInput)
+      return browserslistWasm(browserInput).map(browserInfoFromStr).sort(sortBrowsers)
     } catch (e) {
       return null
     }
@@ -63,8 +64,8 @@
       Load wasm...
     {:then}
       {#if browsersResult}
-        {#each browsersResult as browserStr (browserStr)}
-          <BrowserInfo browserString={browserStr} />
+        {#each browsersResult as browserInfo (browserInfo.key)}
+          <BrowserInfo browserInfo={browserInfo} />
         {/each}
       {:else}
         No browsers for provided browserslist
