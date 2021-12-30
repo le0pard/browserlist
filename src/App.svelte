@@ -4,7 +4,7 @@
   import {memoize} from '@utils/memoize'
   import {browserInfoFromStr, sortBrowsers} from '@utils/browsers'
   import init, {browserslist_wasm as browserslistWasm} from './wasm'
-  import ReloadPrompt from './components/ReloadPrompt.svelte'
+  import SWPrompt from './components/SWPrompt.svelte'
   import GithubCorner from './components/GithubCorner.svelte'
   import BrowserInfo from './components/BrowserInfo.svelte'
 
@@ -35,6 +35,16 @@
 </script>
 
 <style>
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-title {
+    margin-top: 2rem;
+  }
+
   .input-wrapper {
     display: flex;
     align-items: center;
@@ -49,7 +59,7 @@
     box-shadow: none;
     border-radius: 0.25rem;
     width: 80%;
-    margin: 3rem 0;
+    margin: 1rem 0;
     line-height: 1.5;
     padding: 0.3rem 0.2rem;
   }
@@ -66,11 +76,58 @@
     font-size: 2rem;
     line-height: 2.5rem;
   }
+
+  .results-list {
+    margin: 1rem;
+    display: grid;
+    grid-gap: 0.3rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 500px) {
+    .results-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .results-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .results-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .results-list {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  @media (min-width: 2500px) {
+    .results-list {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  @media (min-width: 3000px) {
+    .results-list {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
 </style>
 
 <GithubCorner />
-<ReloadPrompt />
+<SWPrompt />
+
 <main>
+  <div class="header-wrapper">
+    <h1 class="header-title">Browserlist WASM</h1>
+  </div>
   <div class="input-wrapper">
     <input class="main-input" bind:value={browserInput} on:keyup={() => debounceBrowserList()} />
   </div>
@@ -79,9 +136,11 @@
       Load wasm...
     {:then}
       {#if browsersResult}
-        {#each browsersResult as browserInfo (browserInfo.key)}
-          <BrowserInfo browserInfo={browserInfo} />
-        {/each}
+        <div class="results-list">
+          {#each browsersResult as browserInfo (browserInfo.key)}
+            <BrowserInfo browserInfo={browserInfo} />
+          {/each}
+        </div>
       {:else}
         No browsers for provided browserslist
       {/if}

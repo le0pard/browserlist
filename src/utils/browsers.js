@@ -74,7 +74,7 @@ export const browserInfoFromStr = (browserStr) => {
     case 'and_ff': {
       return {
         ...baseInfo,
-        name: `Firefox Android ${version}`,
+        name: `Firefox for Android ${version}`,
         icon: firefoxLogo
       }
     }
@@ -88,7 +88,7 @@ export const browserInfoFromStr = (browserStr) => {
     case 'and_chr': {
       return {
         ...baseInfo,
-        name: `Chrome Android ${version}`,
+        name: `Chrome for Android ${version}`,
         icon: chromeLogo
       }
     }
@@ -200,7 +200,7 @@ export const browserInfoFromStr = (browserStr) => {
     case 'and_qq': {
       return {
         ...baseInfo,
-        name: `QQ browser Android ${version}`,
+        name: `QQ browser for Android ${version}`,
         icon: webLogo
       }
     }
