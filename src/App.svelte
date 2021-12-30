@@ -68,14 +68,7 @@
     color: var(--inputFocusColor);
     background-color: var(--inputFocusBgColor);
     border-color: var(--inputFocusBorderColor);
-  }
-
-  .main-input:focus:not(:focus-visible) {
     outline: none;
-  }
-
-  @keyframes loader-animation {
-    0% {background-position: right}
   }
 
   .loader-wrapper {
@@ -85,7 +78,11 @@
     justify-content: center;
   }
 
-  .loader {
+  @keyframes loader-animation {
+    0% {background-position: right}
+  }
+
+  .loader-spinner {
     width: 120px;
     height:20px;
     background: linear-gradient(90deg,var(--baseColor) 33%,#0005 50%,var(--baseColor) 66%) var(--bgColor);
@@ -178,7 +175,7 @@
   <div class="result">
     {#await loadWasm()}
       <div class="loader-wrapper">
-        <div class="loader"></div>
+        <div class="loader-spinner"></div>
         <div class="loader-text">Load wasm module...</div>
       </div>
     {:then}
