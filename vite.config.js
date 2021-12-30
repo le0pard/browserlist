@@ -33,28 +33,28 @@ export default defineConfig({
       },
       includeAssets: [],
       manifest: {
-        name: 'Browserlist',
+        name: 'Browserlist WASM',
         short_name: 'Browserlist',
-        description: 'Browserlist wasm',
-        theme_color: '#ffffff'
-        // icons: [
-        //   {
-        //     src: 'pwa-192x192.png',
-        //     sizes: '192x192',
-        //     type: 'image/png',
-        //   },
-        //   {
-        //     src: 'pwa-512x512.png',
-        //     sizes: '512x512',
-        //     type: 'image/png',
-        //   },
-        //   {
-        //     src: 'pwa-512x512.png',
-        //     sizes: '512x512',
-        //     type: 'image/png',
-        //     purpose: 'any maskable',
-        //   }
-        // ]
+        description: 'Browserlist WASM',
+        theme_color: '#1f1f1f',
+        icons: [
+          {
+            src: '/icon-192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: '/icon-512.png',
+            sizes: '512x512',
+            type: 'image/png'
+          },
+          {
+            src: '/icon-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable'
+          }
+        ]
       }
     })
   ]
