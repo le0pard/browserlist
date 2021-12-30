@@ -36,17 +36,22 @@ export default defineConfig({
         name: 'Browserlist WASM',
         short_name: 'Browserlist',
         description: 'Browserlist WASM',
+        display: 'standalone',
+        start_url: '/',
         theme_color: '#1f1f1f',
+        background_color: '#f7f7f7',
         icons: [
           {
             src: '/icon-192.png',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/png',
+            purpose: 'any'
           },
           {
             src: '/icon-512.png',
             sizes: '512x512',
-            type: 'image/png'
+            type: 'image/png',
+            purpose: 'any'
           },
           {
             src: '/icon-512.png',
