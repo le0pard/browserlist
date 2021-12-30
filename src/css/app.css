@@ -5,13 +5,27 @@
   --bgColor: #f7f7f7;
   --linkColor: #ff9b44;
   --linkHoverColor: #ff9b44;
+  --inputColor: #212529;
+  --inputBorderColor: #ced4da;
+  --inputBgColor: #fff;
+  --inputFocusColor: #212529;
+  --inputFocusBorderColor: #ff9b44;
+  --inputFocusBgColor: #fff;
 }
 
-:root.dark {
-  --baseColor: #bbc4cc;
-  --bgColor: #23272b;
-  --linkColor: #ff9b44;
-  --linkHoverColor: #ff9b44;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --baseColor: #bbc4cc;
+    --bgColor: #23272b;
+    --linkColor: #ff9b44;
+    --linkHoverColor: #ff9b44;
+    --inputColor: #bbc4cc;
+    --inputBorderColor: #e3e3e3;
+    --inputBgColor: #2e3439;
+    --inputFocusColor: #bbc4cc;
+    --inputFocusBorderColor: #ff9b44;
+    --inputFocusBgColor: #2e3439;
+  }
 }
 
 html {

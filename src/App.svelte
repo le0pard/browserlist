@@ -5,6 +5,7 @@
   import {browserInfoFromStr, sortBrowsers} from '@utils/browsers'
   import init, {browserslist_wasm as browserslistWasm} from './wasm'
   import ReloadPrompt from './components/ReloadPrompt.svelte'
+  import GithubCorner from './components/GithubCorner.svelte'
   import BrowserInfo from './components/BrowserInfo.svelte'
 
   let browserInput = '>0.3%, not IE 11, not dead'
@@ -35,14 +36,29 @@
 
 <style>
   .input-wrapper {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .input {
-    box-sizing: border-box;
-    margin: 0.5rem;
-    font-size: 2rem;
-    width: 90%;
+  .main-input {
+    font-size: 2.2rem;
+    color: var(--inputColor);
+    background-color: var(--inputBgColor);
+    border: 1px solid var(--inputBorderColor);
+    box-shadow: none;
+    border-radius: 0.25rem;
+    width: 80%;
+    margin: 3rem 0;
+    line-height: 1.5;
+    padding: 0.3rem 0.2rem;
+  }
+
+  .main-input:focus {
+    color: var(--inputFocusColor);
+    background-color: var(--inputFocusBgColor);
+    border-color: var(--inputFocusBorderColor);
+    outline: 0;
   }
 
   .result {
@@ -52,12 +68,11 @@
   }
 </style>
 
-
+<GithubCorner />
 <ReloadPrompt />
-
 <main>
   <div class="input-wrapper">
-    <input class="input" bind:value={browserInput} on:keyup={() => debounceBrowserList()} />
+    <input class="main-input" bind:value={browserInput} on:keyup={() => debounceBrowserList()} />
   </div>
   <div class="result">
     {#await loadWasm()}
