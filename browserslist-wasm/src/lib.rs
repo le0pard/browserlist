@@ -11,6 +11,8 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
 pub fn browserslist_wasm(query: String, opts: JsValue) -> Result<JsValue, JsValue> {
+    utils::set_panic_hook();
+
     let opts_resolve: Option<Opts> = opts.into_serde().unwrap_or_default();
 
     serde_wasm_bindgen::to_value(
