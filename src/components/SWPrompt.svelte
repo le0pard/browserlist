@@ -38,7 +38,8 @@
     padding: 0.5rem;
   }
 
-  .sw-button:hover, .sw-button:active {
+  .sw-button:hover,
+  .sw-button:active {
     color: var(--buttonHoverColor);
     background-color: var(--buttonHoverBgColor);
   }
@@ -51,17 +52,14 @@
 {#if $needRefresh}
   <div class="sw-message" role="alert">
     <div class="sw-wrapper">
-      <div class="sw-message-content">
-        New content available, click on reload button to update
-      </div>
-      <button class="sw-button sw-reload-button" on:click|preventDefault={() => updateServiceWorker(true)}>
+      <div class="sw-message-content">New content available, click on reload button to update</div>
+      <button
+        class="sw-button sw-reload-button"
+        on:click|preventDefault="{() => updateServiceWorker(true)}"
+      >
         Reload
       </button>
-      <button class="sw-button" on:click|preventDefault={close}>
-        Close
-      </button>
+      <button class="sw-button" on:click|preventDefault="{close}"> Close </button>
     </div>
   </div>
 {/if}
-
-

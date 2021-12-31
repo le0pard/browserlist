@@ -29,9 +29,7 @@
     timeout = setTimeout(() => updateResultsForBrowsers(), wait)
   }
 
-  const loadWasm = memoize(() => (
-    init().then(() => updateResultsForBrowsers())
-  ))
+  const loadWasm = memoize(() => init().then(() => updateResultsForBrowsers()))
 </script>
 
 <style>
@@ -79,13 +77,16 @@
   }
 
   @keyframes loader-animation {
-    0% {background-position: right}
+    0% {
+      background-position: right;
+    }
   }
 
   .loader-spinner {
     width: 120px;
-    height:20px;
-    background: linear-gradient(90deg,var(--baseColor) 33%,#0005 50%,var(--baseColor) 66%) var(--bgColor);
+    height: 20px;
+    background: linear-gradient(90deg, var(--baseColor) 33%, #0005 50%, var(--baseColor) 66%)
+      var(--bgColor);
     background-size: 300% 100%;
     animation: loader-animation 1s infinite linear;
   }
@@ -132,7 +133,11 @@
     <h1 class="header-title">Browserlist WASM</h1>
   </div>
   <div class="input-wrapper">
-    <input class="main-input" bind:value={browserInput} on:keyup={() => debounceBrowserList()} />
+    <input
+      class="main-input"
+      bind:value="{browserInput}"
+      on:keyup="{() => debounceBrowserList()}"
+    />
   </div>
   <div class="result">
     {#await loadWasm()}
@@ -144,7 +149,7 @@
       {#if browsersResult}
         <div class="results-list">
           {#each browsersResult as browserInfo (browserInfo.key)}
-            <BrowserInfo browserInfo={browserInfo} />
+            <BrowserInfo browserInfo="{browserInfo}" />
           {/each}
         </div>
       {:else}
@@ -159,5 +164,3 @@
     {/await}
   </div>
 </main>
-
-
