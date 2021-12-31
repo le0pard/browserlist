@@ -6,10 +6,16 @@
 
 <style>
   .browser-wrapper {
+    display: table;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .browser-card {
     margin: 0.5rem;
     font-size: 1.4rem;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: flex-start;
   }
 
@@ -25,7 +31,9 @@
 </style>
 
 <div class="browser-wrapper">
-  <img class="browser-icon" src="{browserInfo.icon}" alt="{browserInfo.name}" />
-  <span class="browser-name">{browserInfo.name}</span>
+  <div class="browser-card">
+    <img class="browser-icon" src="{browserInfo.icon}" alt="{browserInfo.name}" />
+    <span class="browser-name">{browserInfo.name}</span>
+  </div>
 </div>
 
