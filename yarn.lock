@@ -1751,7 +1751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.1":
+"autoprefixer@npm:^10.4.2":
   version: 10.4.2
   resolution: "autoprefixer@npm:10.4.2"
   dependencies:
@@ -1905,20 +1905,20 @@ __metadata:
     "@sveltejs/vite-plugin-svelte": ^1.0.0-next.34
     eslint: ^8.6.0
     eslint-plugin-import: ^2.25.4
-    eslint-plugin-svelte3: ^3.3.0
+    eslint-plugin-svelte3: ^3.4.0
     focus-visible: ^5.2.0
     normalize.css: ^8.0.1
     postcss-browser-reporter: ^0.6.0
     postcss-import: ^14.0.2
     postcss-nested: ^5.0.6
-    postcss-preset-env: ^7.2.0
+    postcss-preset-env: ^7.2.3
     postcss-reporter: ^7.0.5
     prettier: ^2.5.1
-    prettier-plugin-svelte: ^2.5.1
+    prettier-plugin-svelte: ^2.6.0
     rucksack-css: ^1.0.2
-    svelte: ^3.45.0
-    vite: ^2.7.10
-    vite-plugin-pwa: ^0.11.12
+    svelte: ^3.46.2
+    vite: ^2.7.12
+    vite-plugin-pwa: ^0.11.13
     wasm-pack: ^0.10.2
   languageName: unknown
   linkType: soft
@@ -2036,10 +2036,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001295, caniuse-lite@npm:^1.0.30001297":
+"caniuse-lite@npm:^1.0.30001297":
   version: 1.0.30001298
   resolution: "caniuse-lite@npm:1.0.30001298"
   checksum: 43566732d1b8746e3dfae57f558471c701b26b2c166fb9fc53ad750d83128b2eb680a5e08233717e64055779b408c72d3b2cfad6d4ae33a3e647a11dc1c0d515
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001299":
+  version: 1.0.30001299
+  resolution: "caniuse-lite@npm:1.0.30001299"
+  checksum: c770f60ebf3e0cc8043ba4db0ebec12d7a595a6b50cb4437c3c5c55b04de9d2413f711f2828be761e8c37bb46b927a8abe6b199b8f0ffc1a34af0ebdee84be27
   languageName: node
   linkType: hard
 
@@ -2184,7 +2191,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-blank-pseudo@npm:^3.0.1":
+"css-blank-pseudo@npm:^3.0.2":
   version: 3.0.2
   resolution: "css-blank-pseudo@npm:3.0.2"
   dependencies:
@@ -2197,16 +2204,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-has-pseudo@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "css-has-pseudo@npm:3.0.2"
+"css-has-pseudo@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "css-has-pseudo@npm:3.0.3"
   dependencies:
     postcss-selector-parser: ^6.0.8
   peerDependencies:
     postcss: ^8.3
   bin:
     css-has-pseudo: dist/cli.cjs
-  checksum: 534995dd11c91ce2c6984bb12784240b84f4d2069830cf00dcedd4214177c1c59b4137ffaa4af67b3ea47c1fda2bb1c741816c4d2d6e67844d387dc32e1d482a
+  checksum: 57d4cb466d19a639611274937a71b2f3d797a55b76cdeb18bd75934ece4daf09d20d7cd2e604ed82ece913f562a15b90955a781575249dda88b75a9a7ac4a071
   languageName: node
   linkType: hard
 
@@ -2670,13 +2677,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-svelte3@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "eslint-plugin-svelte3@npm:3.3.0"
+"eslint-plugin-svelte3@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "eslint-plugin-svelte3@npm:3.4.0"
   peerDependencies:
     eslint: ">=6.0.0"
     svelte: ^3.2.0
-  checksum: 85d240c3a4d3ecae730800839ccbfa81366c89e65645e5c166d4075c394951fe7e498ea3761f3890271a581dc5f1006162248209e93156aa1f805b4b39b30e54
+  checksum: 3b35cb1d5e3232a7b58ed694146df6fa0cabeafde1f3d7bc98555d2b9f517f2285df97e2e6394ed070bf1699f78b4c2fa03c1220fedd8202c693a196b9d49598
   languageName: node
   linkType: hard
 
@@ -4217,16 +4224,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-color-rebeccapurple@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "postcss-color-rebeccapurple@npm:7.0.1"
+"postcss-color-rebeccapurple@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "postcss-color-rebeccapurple@npm:7.0.2"
   dependencies:
     postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.3
-  bin:
-    postcss-color-rebeccapurple: dist/cli.mjs
-  checksum: 53facaba204a637f4de6979d8ccafdef8ec846714804854a07ca2184a32fa88e6685cbbf23c2dac02f43d84befac04649810a779f2ba44ca7e6d337789ea8760
+  checksum: 7d734ac50769f2cf42ac1e58247e45dffa3cc5fb663e67fa5b8ca1a71e1e950603263aad2e98d1629db6058b173ade0c5b5de0390d51d240da8c8674c036c8c7
   languageName: node
   linkType: hard
 
@@ -4250,14 +4255,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:^12.0.2":
-  version: 12.0.4
-  resolution: "postcss-custom-properties@npm:12.0.4"
+"postcss-custom-properties@npm:^12.1.2":
+  version: 12.1.2
+  resolution: "postcss-custom-properties@npm:12.1.2"
   dependencies:
     postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.3
-  checksum: c0a4e9fb48a4c3f4cec0d34c136950c3d97a96c07999d7ae0a90426542fa100d811c67733ee97c7ceaff7a088e3a8bea10c54d512db7ccc9a4e4b230980096e6
+  checksum: b73ea1028e4e90ca61edb5a412e5ab12bd5bcdfa7abd62b3034653ad9f745c6d6be40c7f2e7c0310fb4922b1c345f6f93ce0a7a46d0caf84771f85eb0bad4ce5
   languageName: node
   linkType: hard
 
@@ -4272,14 +4277,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-dir-pseudo-class@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "postcss-dir-pseudo-class@npm:6.0.2"
+"postcss-dir-pseudo-class@npm:^6.0.3":
+  version: 6.0.3
+  resolution: "postcss-dir-pseudo-class@npm:6.0.3"
   dependencies:
     postcss-selector-parser: ^6.0.8
   peerDependencies:
     postcss: ^8.3
-  checksum: 6d9311d7d9dc673fefb2220b9d7825a64b123a86f9dea1f4a896596897a7c89a897dc83fc95b24e958bc0c9dbdd1052c693db52d7b7ccf3c67b9545343cc9532
+  checksum: a567d3533168722d3d0c1f8792362109358a7959bfbfc4a2055ad1bb70e4a69f2bad6b39acd807ddbcd3f9fb01864d7505c69201df4ac33d71a241c8f23275c2
   languageName: node
   linkType: hard
 
@@ -4426,12 +4431,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-logical@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "postcss-logical@npm:5.0.2"
+"postcss-logical@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "postcss-logical@npm:5.0.3"
   peerDependencies:
     postcss: ^8.3
-  checksum: dfee654af3245def55938aad31bb6cb11b624a9e59148549bce3c90995176e7dceda0a5cfb28dd12e435a8161152cdcb5ac2731e865c1e683e772c8afccff5cf
+  checksum: e98fdd0637ce82cf7e9c39dc981bf91992e63db90a9b319ce135e5090ef19fe04ef24ba35ce60d456bb264580be66eb6383112cde4963c0c18d519d788d566d1
   languageName: node
   linkType: hard
 
@@ -4455,14 +4460,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-nesting@npm:^10.1.1":
-  version: 10.1.1
-  resolution: "postcss-nesting@npm:10.1.1"
+"postcss-nesting@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "postcss-nesting@npm:10.1.2"
   dependencies:
     postcss-selector-parser: ^6.0.8
   peerDependencies:
     postcss: ^8.3
-  checksum: b05aba21d7788ff201eaa6cfb1040dab9841e7745d784951483e853134953383bdc53ee55f5fdd759247bb9808fd008ae312fa7d69a9322812b8c2f9746b3e35
+  checksum: 571385eb40ba2874d9e87ed4f8e6e1743c2626e8e626d2d8dc857eeaff7299cc378aa5a662aea93de807955bd32282cf4eaa0434bdb4bd0fdaa2b74703ba98f7
   languageName: node
   linkType: hard
 
@@ -4513,25 +4518,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-env@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "postcss-preset-env@npm:7.2.0"
+"postcss-preset-env@npm:^7.2.3":
+  version: 7.2.3
+  resolution: "postcss-preset-env@npm:7.2.3"
   dependencies:
-    autoprefixer: ^10.4.1
+    autoprefixer: ^10.4.2
     browserslist: ^4.19.1
-    caniuse-lite: ^1.0.30001295
-    css-blank-pseudo: ^3.0.1
-    css-has-pseudo: ^3.0.2
+    caniuse-lite: ^1.0.30001299
+    css-blank-pseudo: ^3.0.2
+    css-has-pseudo: ^3.0.3
     css-prefers-color-scheme: ^6.0.2
     cssdb: ^5.0.0
     postcss-attribute-case-insensitive: ^5.0.0
     postcss-color-functional-notation: ^4.2.1
     postcss-color-hex-alpha: ^8.0.2
-    postcss-color-rebeccapurple: ^7.0.1
+    postcss-color-rebeccapurple: ^7.0.2
     postcss-custom-media: ^8.0.0
-    postcss-custom-properties: ^12.0.2
+    postcss-custom-properties: ^12.1.2
     postcss-custom-selectors: ^6.0.0
-    postcss-dir-pseudo-class: ^6.0.2
+    postcss-dir-pseudo-class: ^6.0.3
     postcss-double-position-gradients: ^3.0.4
     postcss-env-function: ^4.0.4
     postcss-focus-visible: ^6.0.3
@@ -4541,9 +4546,9 @@ __metadata:
     postcss-image-set-function: ^4.0.4
     postcss-initial: ^4.0.1
     postcss-lab-function: ^4.0.3
-    postcss-logical: ^5.0.2
+    postcss-logical: ^5.0.3
     postcss-media-minmax: ^5.0.0
-    postcss-nesting: ^10.1.1
+    postcss-nesting: ^10.1.2
     postcss-overflow-shorthand: ^3.0.2
     postcss-page-break: ^3.0.4
     postcss-place: ^7.0.3
@@ -4552,7 +4557,7 @@ __metadata:
     postcss-selector-not: ^5.0.0
   peerDependencies:
     postcss: ^8.4
-  checksum: f962317685b7e3a56582ba60d1aaf6a932b2744bbfb534cdc7d363ffabb18724795f15d117523ce4d7591adeea7dbc8032e6bcef157572d6d852771c21877e40
+  checksum: ee2f3a1e7855817b22e0aa44174d2efce0db8da92c6bfa40cfc97f9c27d77c843486879f7fc3ecbb700e9571b3cb9d8d37a3ff77d419ed34eddc90e64aef849c
   languageName: node
   linkType: hard
 
@@ -4720,13 +4725,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-svelte@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "prettier-plugin-svelte@npm:2.5.1"
+"prettier-plugin-svelte@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "prettier-plugin-svelte@npm:2.6.0"
   peerDependencies:
     prettier: ^1.16.4 || ^2.0.0
     svelte: ^3.2.0
-  checksum: 433c0008749043a0ef16ecc27371db9cdd616b700d071e8f26fc933d23e466b2703b129643fabe1072151cf84dfb6ccad39d0baaa9f93f522d3e6bebb5a06d9e
+  checksum: 1ee680cba9c9918a0d831e2161b774ac588bcd8ba8e87a27b33f0382873d2d8f4397bbf24968f777b48c281c97eba573c64087a8ed28eaaf17d083fa9fe6474d
   languageName: node
   linkType: hard
 
@@ -5399,10 +5404,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^3.45.0":
-  version: 3.45.0
-  resolution: "svelte@npm:3.45.0"
-  checksum: bdf85bdd0e17ae8fa079efc29417c37a59ac70b79e215d8a31c08cf86e6324db96957f67f040334f741bdc645c401a8067762d436333c39c0221b93aadaf9371
+"svelte@npm:^3.46.2":
+  version: 3.46.2
+  resolution: "svelte@npm:3.46.2"
+  checksum: a04688a844b4ad91f728d48441b66e4341f99119c3b972a747dbce26b5bf484b0b25fd6fa10cbc3fd992d7979d7e58bf05debf7d134aff47c48dab516d6a5122
   languageName: node
   linkType: hard
 
@@ -5638,9 +5643,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-pwa@npm:^0.11.12":
-  version: 0.11.12
-  resolution: "vite-plugin-pwa@npm:0.11.12"
+"vite-plugin-pwa@npm:^0.11.13":
+  version: 0.11.13
+  resolution: "vite-plugin-pwa@npm:0.11.13"
   dependencies:
     debug: ^4.3.3
     fast-glob: ^3.2.7
@@ -5652,13 +5657,13 @@ __metadata:
     vite: ^2.0.0
     workbox-build: ^6.4.0
     workbox-window: ^6.4.0
-  checksum: 03fc559ac0f2ecc8457cd125d592f2ad47c2bb08913a17fc961fd1f27eb6c90738e428dcdbf19db3a03d48bb9eedfd3c83d3d4e389ea4ee5dc7479c5e2576c10
+  checksum: 0bf0c3fc0c2e075dd36197a941d973bb0d22689ba417863f768a49a9e623ee8bd10106d32361b6ac5f01bcd7968b633b1c0ef1cb2f504afa736a249453fe4c1c
   languageName: node
   linkType: hard
 
-"vite@npm:^2.7.10":
-  version: 2.7.10
-  resolution: "vite@npm:2.7.10"
+"vite@npm:^2.7.12":
+  version: 2.7.12
+  resolution: "vite@npm:2.7.12"
   dependencies:
     esbuild: ^0.13.12
     fsevents: ~2.3.2
@@ -5681,7 +5686,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 1757108547ca34bd01a8ee3973cb04b484492c9e5690fc75f54bbcbde5965ab6e0a5b8355c336adf0a9117aa0fdae3053af3aafa9e5eb783282fffa948cfbe11
+  checksum: 56d62ae8131b02891f2dbd81f26a3ca28a02bfe390f9cb4e0c2d8dc831c2e2f8264dd3c45b14c7dd48e79d83d323a35148f92729e1f3385fae04fcd691f3f985
   languageName: node
   linkType: hard
 
