@@ -1504,15 +1504,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^1.0.0-next.34":
-  version: 1.0.0-next.34
-  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.0-next.34"
+"@sveltejs/vite-plugin-svelte@npm:^1.0.0-next.35":
+  version: 1.0.0-next.35
+  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.0-next.35"
   dependencies:
     "@rollup/pluginutils": ^4.1.2
     debug: ^4.3.3
     kleur: ^4.1.4
     magic-string: ^0.25.7
-    require-relative: ^0.8.7
     svelte-hmr: ^0.14.9
   peerDependencies:
     diff-match-patch: ^1.0.5
@@ -1521,7 +1520,7 @@ __metadata:
   peerDependenciesMeta:
     diff-match-patch:
       optional: true
-  checksum: 90ec65c63b6534922761e29e5c3d0fefe5a75ca048c0704cd51a014325a173a818e641dece4b5384fefb2209a9db51baab945107be9b4983fc19190186cb2b6b
+  checksum: d194d9634f53c24f8b84e9557e838b4076b3a0304fc8ccda296d98b0052bf5ccf302b304929b0bb9b7f12b587c0427a960b710c0ddb37d6c5306b2898dfcac38
   languageName: node
   linkType: hard
 
@@ -1654,13 +1653,6 @@ __metadata:
     require-from-string: ^2.0.2
     uri-js: ^4.2.2
   checksum: 90849ef03c4f4f7051d15f655120137b89e3205537d683beebd39d95f40c0ca00ea8476cd999602d2f433863e7e4bf1b81d1869d1e07f4dcf56d71b6430a605c
-  languageName: node
-  linkType: hard
-
-"ansi-colors@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "ansi-colors@npm:4.1.1"
-  checksum: 138d04a51076cb085da0a7e2d000c5c0bb09f6e772ed5c65c53cb118d37f6c5f1637506d7155fb5f330f0abcf6f12fa2e489ac3f8cdab9da393bf1bb4f9a32b0
   languageName: node
   linkType: hard
 
@@ -1902,8 +1894,8 @@ __metadata:
     "@browser-logos/samsung-internet": ^4.0.6
     "@browser-logos/uc": ^1.1.0
     "@browser-logos/web": ^3.0.0
-    "@sveltejs/vite-plugin-svelte": ^1.0.0-next.34
-    eslint: ^8.6.0
+    "@sveltejs/vite-plugin-svelte": ^1.0.0-next.35
+    eslint: ^8.7.0
     eslint-plugin-import: ^2.25.4
     eslint-plugin-svelte3: ^3.4.0
     focus-visible: ^5.2.0
@@ -1917,7 +1909,7 @@ __metadata:
     prettier-plugin-svelte: ^2.6.0
     rucksack-css: ^1.0.2
     svelte: ^3.46.2
-    vite: ^2.7.12
+    vite: ^2.7.13
     vite-plugin-pwa: ^0.11.13
     wasm-pack: ^0.10.2
   languageName: unknown
@@ -2370,15 +2362,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enquirer@npm:^2.3.5":
-  version: 2.3.6
-  resolution: "enquirer@npm:2.3.6"
-  dependencies:
-    ansi-colors: ^4.1.1
-  checksum: 1c0911e14a6f8d26721c91e01db06092a5f7675159f0261d69c403396a385afd13dd76825e7678f66daffa930cfaa8d45f506fb35f818a2788463d022af1b884
-  languageName: node
-  linkType: hard
-
 "env-paths@npm:^2.2.0":
   version: 2.2.1
   resolution: "env-paths@npm:2.2.1"
@@ -2722,9 +2705,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.6.0":
-  version: 8.6.0
-  resolution: "eslint@npm:8.6.0"
+"eslint-visitor-keys@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "eslint-visitor-keys@npm:3.2.0"
+  checksum: fdadbb26f9e6417d3db7ad4f00bb0d573b6031c32fa72e8cdae32d038223faaeddff2ee443c90cb489bf774e75bff765c00912b8f9106d65e4f202ccd78c1b18
+  languageName: node
+  linkType: hard
+
+"eslint@npm:^8.7.0":
+  version: 8.7.0
+  resolution: "eslint@npm:8.7.0"
   dependencies:
     "@eslint/eslintrc": ^1.0.5
     "@humanwhocodes/config-array": ^0.9.2
@@ -2733,11 +2723,10 @@ __metadata:
     cross-spawn: ^7.0.2
     debug: ^4.3.2
     doctrine: ^3.0.0
-    enquirer: ^2.3.5
     escape-string-regexp: ^4.0.0
     eslint-scope: ^7.1.0
     eslint-utils: ^3.0.0
-    eslint-visitor-keys: ^3.1.0
+    eslint-visitor-keys: ^3.2.0
     espree: ^9.3.0
     esquery: ^1.4.0
     esutils: ^2.0.2
@@ -2746,7 +2735,7 @@ __metadata:
     functional-red-black-tree: ^1.0.1
     glob-parent: ^6.0.1
     globals: ^13.6.0
-    ignore: ^4.0.6
+    ignore: ^5.2.0
     import-fresh: ^3.0.0
     imurmurhash: ^0.1.4
     is-glob: ^4.0.0
@@ -2757,16 +2746,14 @@ __metadata:
     minimatch: ^3.0.4
     natural-compare: ^1.4.0
     optionator: ^0.9.1
-    progress: ^2.0.0
     regexpp: ^3.2.0
-    semver: ^7.2.1
     strip-ansi: ^6.0.1
     strip-json-comments: ^3.1.0
     text-table: ^0.2.0
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 19ed82fa872ebb45d0f10c2514975b85ab37e78e9b562a5aa3abdbe7802111d65f7d5a8563e394a975337b403163b40624c2cc8bfa585a061e8c7dc55def39b5
+  checksum: 1c80375a48b0fe3ccae3c6354323e4f0e92e970f23abc5b9705b90b7aef514b69ebd0a63e74962d30789986c91fa41c0e25cd2f98f19e9e2a2d36aafdfc9ccc9
   languageName: node
   linkType: hard
 
@@ -3243,6 +3230,13 @@ __metadata:
   version: 4.0.6
   resolution: "ignore@npm:4.0.6"
   checksum: 248f82e50a430906f9ee7f35e1158e3ec4c3971451dd9f99c9bc1548261b4db2b99709f60ac6c6cac9333494384176cc4cc9b07acbe42d52ac6a09cad734d800
+  languageName: node
+  linkType: hard
+
+"ignore@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "ignore@npm:5.2.0"
+  checksum: 6b1f926792d614f64c6c83da3a1f9c83f6196c2839aa41e1e32dd7b8d174cef2e329d75caabb62cb61ce9dc432f75e67d07d122a037312db7caa73166a1bdb77
   languageName: node
   linkType: hard
 
@@ -4751,13 +4745,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"progress@npm:^2.0.0":
-  version: 2.0.3
-  resolution: "progress@npm:2.0.3"
-  checksum: f67403fe7b34912148d9252cb7481266a354bd99ce82c835f79070643bb3c6583d10dbcfda4d41e04bbc1d8437e9af0fb1e1f2135727878f5308682a579429b7
-  languageName: node
-  linkType: hard
-
 "promise-inflight@npm:^1.0.1":
   version: 1.0.1
   resolution: "promise-inflight@npm:1.0.1"
@@ -4932,13 +4919,6 @@ __metadata:
   version: 2.0.2
   resolution: "require-from-string@npm:2.0.2"
   checksum: a03ef6895445f33a4015300c426699bc66b2b044ba7b670aa238610381b56d3f07c686251740d575e22f4c87531ba662d06937508f0f3c0f1ddc04db3130560b
-  languageName: node
-  linkType: hard
-
-"require-relative@npm:^0.8.7":
-  version: 0.8.7
-  resolution: "require-relative@npm:0.8.7"
-  checksum: f1c3be06977823bba43600344d9ea6fbf8a55bdb81ec76533126849ab4024e6c31c6666f37fa4b5cfeda9c41dee89b8e19597cac02bdefaab42255c6708661ab
   languageName: node
   linkType: hard
 
@@ -5121,7 +5101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.2.1, semver@npm:^7.3.5":
+"semver@npm:^7.3.5":
   version: 7.3.5
   resolution: "semver@npm:7.3.5"
   dependencies:
@@ -5661,9 +5641,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^2.7.12":
-  version: 2.7.12
-  resolution: "vite@npm:2.7.12"
+"vite@npm:^2.7.13":
+  version: 2.7.13
+  resolution: "vite@npm:2.7.13"
   dependencies:
     esbuild: ^0.13.12
     fsevents: ~2.3.2
@@ -5686,7 +5666,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 56d62ae8131b02891f2dbd81f26a3ca28a02bfe390f9cb4e0c2d8dc831c2e2f8264dd3c45b14c7dd48e79d83d323a35148f92729e1f3385fae04fcd691f3f985
+  checksum: 3d8780754974c5012b768b5394dce15a171e2f9e061f86517a9c934bfff02855439d411c6769efc0a1791f6c511e703e1ade8ac14a8030b0e62408af39eea456
   languageName: node
   linkType: hard
 
