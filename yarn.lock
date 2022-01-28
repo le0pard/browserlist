@@ -1504,9 +1504,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^1.0.0-next.35":
-  version: 1.0.0-next.35
-  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.0-next.35"
+"@sveltejs/vite-plugin-svelte@npm:^1.0.0-next.36":
+  version: 1.0.0-next.36
+  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.0-next.36"
   dependencies:
     "@rollup/pluginutils": ^4.1.2
     debug: ^4.3.3
@@ -1520,7 +1520,7 @@ __metadata:
   peerDependenciesMeta:
     diff-match-patch:
       optional: true
-  checksum: d194d9634f53c24f8b84e9557e838b4076b3a0304fc8ccda296d98b0052bf5ccf302b304929b0bb9b7f12b587c0427a960b710c0ddb37d6c5306b2898dfcac38
+  checksum: a78907ae4719db44351e763a0291e7943eb07dbcee0da8b9214479ad94ba9fe0ca6e2d319c8ca26fd9a86c8374864f42790cd83a2924571b5f23c9fab115fecf
   languageName: node
   linkType: hard
 
@@ -1894,8 +1894,8 @@ __metadata:
     "@browser-logos/samsung-internet": ^4.0.6
     "@browser-logos/uc": ^1.1.0
     "@browser-logos/web": ^3.0.0
-    "@sveltejs/vite-plugin-svelte": ^1.0.0-next.35
-    eslint: ^8.7.0
+    "@sveltejs/vite-plugin-svelte": ^1.0.0-next.36
+    eslint: ^8.8.0
     eslint-plugin-import: ^2.25.4
     eslint-plugin-svelte3: ^3.4.0
     focus-visible: ^5.2.0
@@ -1908,7 +1908,7 @@ __metadata:
     prettier: ^2.5.1
     prettier-plugin-svelte: ^2.6.0
     rucksack-css: ^1.0.2
-    svelte: ^3.46.2
+    svelte: ^3.46.3
     vite: ^2.7.13
     vite-plugin-pwa: ^0.11.13
     wasm-pack: ^0.10.2
@@ -2712,9 +2712,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.7.0":
-  version: 8.7.0
-  resolution: "eslint@npm:8.7.0"
+"eslint@npm:^8.8.0":
+  version: 8.8.0
+  resolution: "eslint@npm:8.8.0"
   dependencies:
     "@eslint/eslintrc": ^1.0.5
     "@humanwhocodes/config-array": ^0.9.2
@@ -2753,7 +2753,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 1c80375a48b0fe3ccae3c6354323e4f0e92e970f23abc5b9705b90b7aef514b69ebd0a63e74962d30789986c91fa41c0e25cd2f98f19e9e2a2d36aafdfc9ccc9
+  checksum: 41a7e85bf84cf9f2d758ef3e8d08020a39a2836703728b59535684681349bd021c2c6e24174462b844a914870d707d2151e0371198899d957b444de91adaa435
   languageName: node
   linkType: hard
 
@@ -5384,10 +5384,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^3.46.2":
-  version: 3.46.2
-  resolution: "svelte@npm:3.46.2"
-  checksum: a04688a844b4ad91f728d48441b66e4341f99119c3b972a747dbce26b5bf484b0b25fd6fa10cbc3fd992d7979d7e58bf05debf7d134aff47c48dab516d6a5122
+"svelte@npm:^3.46.3":
+  version: 3.46.3
+  resolution: "svelte@npm:3.46.3"
+  checksum: 58659dd03edaf7f4e21e029bb92babe53c26b727d8e1d2beb61baebb360131829016f2ff4c222fa23d789dbbb3e1d092ece79178f441fa385378456b425044f7
   languageName: node
   linkType: hard
 

@@ -1,8 +1,8 @@
 [package]
 name = "browserslist-wasm"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Alexey Vasiliev"]
-edition = "2018"
+edition = "2021"
 
 [lib]
 name = "browserslistwasm"
@@ -12,8 +12,10 @@ crate-type = ["cdylib", "rlib"]
 default = ["console_error_panic_hook"]
 
 [dependencies]
-serde-wasm-bindgen = "0.3.1"
-wasm-bindgen = { version = "0.2.78", features = ["serde-serialize"] }
+serde-wasm-bindgen = "0.4.2"
+parking_lot = { version = "0.11", features = ["wasm-bindgen"] }
+parking_lot_core = "0.9.0"
+wasm-bindgen = { version = "0.2.79", features = ["serde-serialize"] }
 browserslist-rs = { git = "https://github.com/g-plane/browserslist-rs", branch = "main" }
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
@@ -29,13 +31,11 @@ console_error_panic_hook = { version = "0.1.7", optional = true }
 # Unfortunately, `wee_alloc` requires nightly Rust when targeting wasm for now.
 wee_alloc = { version = "0.4.5", optional = true }
 
-[patch.crates-io]
-parking_lot = { git = "https://github.com/Amanieu/parking_lot" }
-parking_lot_core = { git = "https://github.com/Amanieu/parking_lot", package = "parking_lot_core" }
-
 [dev-dependencies]
-wasm-bindgen-test = "0.3.28"
+wasm-bindgen-test = "0.3.29"
 
 [profile.release]
 # Tell `rustc` to optimize for small code size.
-opt-level = "s"
+lto = true
+# opt-level = "s"
+opt-level = "z"
