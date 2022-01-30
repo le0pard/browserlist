@@ -2010,9 +2010,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30000792, caniuse-lite@npm:^1.0.30000805, caniuse-lite@npm:^1.0.30001286, caniuse-lite@npm:^1.0.30001297, caniuse-lite@npm:^1.0.30001299":
-  version: 1.0.30001303
-  resolution: "caniuse-lite@npm:1.0.30001303"
-  checksum: fe77fb680c94c875be2fb78c9507a69d3ed6be8894832d3ee8a7d24e4c5c7599bf217f030fcdfd761ea211065042679bf697a57eefe114058a3208561e2fd042
+  version: 1.0.30001304
+  resolution: "caniuse-lite@npm:1.0.30001304"
+  checksum: 63092ec6c65346f57026d9c7bee0548b77fd606819ca205ee3d99c948e4701b8820c365c00b79d4a4b96f3f0045bc0be767149b8edb74f7223d16cb30630f81e
   languageName: node
   linkType: hard
 
@@ -3697,9 +3697,9 @@ __metadata:
   linkType: hard
 
 "math-expression-evaluator@npm:^1.2.14":
-  version: 1.3.13
-  resolution: "math-expression-evaluator@npm:1.3.13"
-  checksum: fa8ff5f9c4433a115f8fb27e6859eb107c709444f2e0d241cf9b8d55cb0db1c32546960d1b57dff24aa1cf6f491414c436c12225e7d735563192f8f1c3e6f550
+  version: 1.3.14
+  resolution: "math-expression-evaluator@npm:1.3.14"
+  checksum: adcc1af5b7eddc03826344d0cd4429d029be2eddf00294e651a946ad42e590c62c9c87870dff6d5d19b8887cb9bd10a042f4305ffe254e1795bc3903cd0b88a0
   languageName: node
   linkType: hard
 
