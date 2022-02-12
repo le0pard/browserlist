@@ -16,7 +16,6 @@ module.exports = {
         'custom-media-queries': true
       }
     },
-    'postcss-browser-reporter': {},
     'postcss-reporter': {}
   }
 }

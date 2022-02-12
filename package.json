@@ -33,7 +33,6 @@
     "focus-visible": "^5.2.0",
     "normalize.css": "^8.0.1",
     "postcss": "^8.4.6",
-    "postcss-browser-reporter": "^0.6.0",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
     "postcss-preset-env": "^7.3.1",

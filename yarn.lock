@@ -1931,7 +1931,6 @@ __metadata:
     focus-visible: ^5.2.0
     normalize.css: ^8.0.1
     postcss: ^8.4.6
-    postcss-browser-reporter: ^0.6.0
     postcss-import: ^14.0.2
     postcss-nested: ^5.0.6
     postcss-preset-env: ^7.3.1
@@ -4045,13 +4044,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picocolors@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "picocolors@npm:0.2.1"
-  checksum: 3b0f441f0062def0c0f39e87b898ae7461c3a16ffc9f974f320b44c799418cabff17780ee647fda42b856a1dc45897e2c62047e1b546d94d6d5c6962f45427b2
-  languageName: node
-  linkType: hard
-
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -4081,15 +4073,6 @@ __metadata:
   peerDependencies:
     postcss: ^8.0.2
   checksum: 6e0e872af10ba040af79fd0ee63b29cd6bc87a23a146fe71f9942d15769619c1f5b993b3238bdf30eb4f4c24887d2b85755692bc17e21e0ed3b24bd650cbf38b
-  languageName: node
-  linkType: hard
-
-"postcss-browser-reporter@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "postcss-browser-reporter@npm:0.6.0"
-  dependencies:
-    postcss: ^7.0.14
-  checksum: ccd1da6ba538e2c6ae69d9b6e6937bff628694125e1d5fb42e6b235928cea96db1ea0108340454d96fdf382659c3cd338cb90955b10d9a25c2f711146e75f2c5
   languageName: node
   linkType: hard
 
@@ -4466,16 +4449,6 @@ __metadata:
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
   checksum: 819ffab0c9d51cf0acbabf8996dffbfafbafa57afc0e4c98db88b67f2094cb44488758f06e5da95d7036f19556a4a732525e84289a425f4f6fd8e412a9d7442f
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^7.0.14":
-  version: 7.0.39
-  resolution: "postcss@npm:7.0.39"
-  dependencies:
-    picocolors: ^0.2.1
-    source-map: ^0.6.1
-  checksum: 4ac793f506c23259189064bdc921260d869a115a82b5e713973c5af8e94fbb5721a5cc3e1e26840500d7e1f1fa42a209747c5b1a151918a9bc11f0d7ed9048e3
   languageName: node
   linkType: hard
 
@@ -4925,7 +4898,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map@npm:^0.6.0, source-map@npm:^0.6.1":
+"source-map@npm:^0.6.0":
   version: 0.6.1
   resolution: "source-map@npm:0.6.1"
   checksum: 59ce8640cf3f3124f64ac289012c2b8bd377c238e316fb323ea22fbfe83da07d81e000071d7242cad7a23cd91c7de98e4df8830ec3f133cb6133a5f6e9f67bc2
