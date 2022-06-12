@@ -46,7 +46,7 @@
 
 @media (min-width: 420px) and (max-width: 1440px) {
   :root {
-    font-size: calc( 14px + (18 - 14) * ( (100vw - 420px) / ( 1440 - 420) ));
+    font-size: calc(14px + (18 - 14) * ((100vw - 420px) / (1440 - 420)));
   }
 }
 @media (min-width: 1440px) {
