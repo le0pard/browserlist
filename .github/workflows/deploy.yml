@@ -27,15 +27,14 @@ jobs:
           check-latest: true
           cache: 'yarn'
 
-      - uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
+      - name: Update local toolchain
+        run: |
+          rustup update
 
-      - name: Restore rust cache
-        uses: Swatinem/rust-cache@v1
-        with:
-          working-directory: browserslist-wasm
-          target-dir: browserslist-wasm/target
+      - name: Toolchain info
+        run: |
+          cargo --version --verbose
+          rustc --version
 
       - name: Install Javascript dependencies
         run: yarn install --immutable
