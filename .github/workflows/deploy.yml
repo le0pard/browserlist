@@ -26,6 +26,7 @@ jobs:
         with:
           check-latest: true
           cache: 'yarn'
+          node-version-file: '.tool-versions'
 
       - name: Update local toolchain
         run: |
