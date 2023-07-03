@@ -13,7 +13,7 @@
   "devDependencies": {
     "@browser-logos/android-webview": "^1.0.2",
     "@browser-logos/chrome": "^2.0.0",
-    "@browser-logos/edge": "^2.0.6",
+    "@browser-logos/edge": "^2.0.7",
     "@browser-logos/firefox": "^3.0.10",
     "@browser-logos/internet-explorer_6": "^1.0.9",
     "@browser-logos/internet-explorer_7-8": "^1.0.7",
@@ -25,9 +25,9 @@
     "@browser-logos/safari-ios": "^1.0.15",
     "@browser-logos/samsung-internet": "^4.0.6",
     "@browser-logos/uc": "^1.1.0",
-    "@browser-logos/web": "^3.0.0",
-    "@sveltejs/vite-plugin-svelte": "^2.4.1",
-    "eslint": "^8.42.0",
+    "@browser-logos/web": "^3.0.1",
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "eslint": "^8.44.0",
     "eslint-import-resolver-node": "^0.3.7",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-svelte3": "^4.0.0",
@@ -36,14 +36,14 @@
     "postcss": "^8.4.24",
     "postcss-import": "^15.1.0",
     "postcss-nested": "^6.0.1",
-    "postcss-preset-env": "^8.4.2",
+    "postcss-preset-env": "^9.0.0",
     "postcss-reporter": "^7.0.5",
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.1",
-    "svelte": "^3.59.1",
+    "svelte": "^4.0.1",
     "vite": "^4.3.9",
     "vite-plugin-pwa": "^0.16.4",
-    "wasm-pack": "0.11.1"
+    "wasm-pack": "0.12.1"
   },
   "packageManager": "yarn@3.6.0"
 }
