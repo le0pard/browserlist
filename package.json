@@ -41,8 +41,8 @@
     "prettier": "^3.1.0",
     "prettier-plugin-svelte": "^3.1.2",
     "svelte": "^4.2.8",
-    "vite": "^5.0.4",
-    "vite-plugin-pwa": "^0.17.2",
+    "vite": "^5.0.6",
+    "vite-plugin-pwa": "^0.17.4",
     "wasm-pack": "0.12.1"
   },
   "packageManager": "yarn@4.0.2"
