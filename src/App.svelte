@@ -1,5 +1,3 @@
-<svelte:options immutable="{true}" />
-
 <script>
   import {memoize} from '@utils/memoize'
   import {browserInfoFromStr, sortBrowsers} from '@utils/browsers'
@@ -8,9 +6,9 @@
   import GithubCorner from './components/GithubCorner.svelte'
   import BrowserInfo from './components/BrowserInfo.svelte'
 
-  let browserInput = '>0.3%, not IE 11, not dead'
-  let browsersResult = null
-  let timeout = null
+  let browserInput = $state('>0.3%, not IE 11, not dead')
+  let browsersResult = $state(null)
+  let timeout = $state(null)
 
   const getBrowserList = () => {
     try {
@@ -133,11 +131,7 @@
     <h1 class="header-title">Browserlist WASM</h1>
   </div>
   <div class="input-wrapper">
-    <input
-      class="main-input"
-      bind:value="{browserInput}"
-      on:keyup="{() => debounceBrowserList()}"
-    />
+    <input class="main-input" bind:value={browserInput} onkeyup={() => debounceBrowserList()} />
   </div>
   <div class="result">
     {#await loadWasm()}
@@ -149,7 +143,7 @@
       {#if browsersResult}
         <div class="results-list">
           {#each browsersResult as browserInfo (browserInfo.key)}
-            <BrowserInfo browserInfo="{browserInfo}" />
+            <BrowserInfo browserInfo={browserInfo} />
           {/each}
         </div>
       {:else}

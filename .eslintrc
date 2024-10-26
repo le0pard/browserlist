@@ -7,14 +7,15 @@
     "**/wasm/*"
   ],
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:svelte/recommended"
   ],
   "overrides": [
     {
       "files": [
         "*.svelte"
       ],
-      "processor": "svelte3/svelte3"
+      "parser": "svelte-eslint-parser"
     }
   ],
   "rules": {

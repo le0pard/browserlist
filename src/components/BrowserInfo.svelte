@@ -1,7 +1,5 @@
-<svelte:options immutable="{true}" />
-
 <script>
-  export let browserInfo
+  let {browserInfo} = $props()
 </script>
 
 <style>
@@ -27,6 +25,6 @@
 </style>
 
 <div class="browser-wrapper">
-  <img class="browser-icon" src="{browserInfo.icon}" alt="{browserInfo.name}" />
+  <img class="browser-icon" src={browserInfo.icon} alt={browserInfo.name} />
   <span class="browser-name">{browserInfo.name}</span>
 </div>

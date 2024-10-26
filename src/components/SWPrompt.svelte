@@ -1,11 +1,10 @@
-<svelte:options immutable="{true}" />
-
 <script>
   import {useRegisterSW} from 'virtual:pwa-register/svelte'
 
   const {needRefresh, updateServiceWorker} = useRegisterSW({})
 
-  const close = () => {
+  const close = (e) => {
+    e.preventDefault()
     needRefresh.set(false)
   }
 </script>
@@ -55,11 +54,14 @@
       <div class="sw-message-content">New content available, click on reload button to update</div>
       <button
         class="sw-button sw-reload-button"
-        on:click|preventDefault="{() => updateServiceWorker(true)}"
+        onclick={(e) => {
+          e.preventDefault()
+          updateServiceWorker(true)
+        }}
       >
         Reload
       </button>
-      <button class="sw-button" on:click|preventDefault="{close}"> Close </button>
+      <button class="sw-button" onclick={close}> Close </button>
     </div>
   </div>
 {/if}
