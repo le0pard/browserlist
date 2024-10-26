@@ -16,7 +16,7 @@ serde-wasm-bindgen = "0.4.2"
 parking_lot = { version = "0.11", features = ["wasm-bindgen"] }
 parking_lot_core = "0.9.0"
 wasm-bindgen = { version = "0.2.79", features = ["serde-serialize"] }
-browserslist-rs = { git = "https://github.com/g-plane/browserslist-rs", branch = "main" }
+browserslist-rs = { git = "https://github.com/browserslist/browserslist-rs", tag = "v0.15.0" }
 getrandom = { version = "0.2.8", features = ["js"] }
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
