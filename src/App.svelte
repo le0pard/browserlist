@@ -1,7 +1,7 @@
 <script>
-  import {memoize} from '@utils/memoize'
-  import {browserInfoFromStr, sortBrowsers} from '@utils/browsers'
-  import init, {browserslist_wasm as browserslistWasm} from './wasm'
+  import { memoize } from '@utils/memoize'
+  import { browserInfoFromStr, sortBrowsers } from '@utils/browsers'
+  import init, { browserslist_wasm as browserslistWasm } from './wasm'
   import SWPrompt from './components/SWPrompt.svelte'
   import GithubCorner from './components/GithubCorner.svelte'
   import BrowserInfo from './components/BrowserInfo.svelte'

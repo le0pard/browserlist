@@ -1,7 +1,7 @@
 <script>
-  import {useRegisterSW} from 'virtual:pwa-register/svelte'
+  import { useRegisterSW } from 'virtual:pwa-register/svelte'
 
-  const {needRefresh, updateServiceWorker} = useRegisterSW({})
+  const { needRefresh, updateServiceWorker } = useRegisterSW({})
 
   const close = (e) => {
     e.preventDefault()

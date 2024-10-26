@@ -1,5 +1,5 @@
 <script>
-  import {onMount} from 'svelte'
+  import { onMount } from 'svelte'
 
   const lightColor = $state('#fff')
   const darkColor = $state('#151513')

@@ -1,5 +1,5 @@
 <script>
-  let {browserInfo} = $props()
+  let { browserInfo } = $props()
 </script>
 
 <style>
