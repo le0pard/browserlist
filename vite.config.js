@@ -24,11 +24,7 @@ export default defineConfig({
     },
   },
   plugins: [
-    svelte({
-      compilerOptions: {
-        cssHash: ({hash, css}) => `bl-${hash(css)}`
-      }
-    }),
+    svelte(),
     VitePWA({
       strategies: 'injectManifest',
       injectManifest: {
