@@ -28,9 +28,12 @@ jobs:
           cache: 'yarn'
           node-version-file: '.tool-versions'
 
-      - name: Update local toolchain
-        run: |
-          rustup update
+      - name: Install Rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          cache: true
+          toolchain: stable
+          target: wasm32-unknown-unknown
 
       - name: Toolchain info
         run: |
