@@ -29,7 +29,7 @@ export default defineConfig({
       strategies: 'injectManifest',
       injectManifest: {
         maximumFileSizeToCacheInBytes: 5000000,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webmanifest,wasm}']
+        globPatterns: ['**/*.{css,html,ico,png,svg,webmanifest}']
       },
       includeAssets: [],
       manifest: {
