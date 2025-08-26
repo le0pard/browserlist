@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "wasm": "wasm-pack build ./browserslist-wasm --target web --out-dir=./../src/wasm",
-    "wasm:release": "wasm-pack build ./browserslist-wasm --target web --out-dir=./../src/wasm --release",
+    "wasm": "RUSTFLAGS='--cfg getrandom_backend=\"wasm_js\"' wasm-pack build ./browserslist-wasm --target web --out-dir=./../src/wasm",
+    "wasm:release": "RUSTFLAGS='--cfg getrandom_backend=\"wasm_js\"' wasm-pack build ./browserslist-wasm --target web --out-dir=./../src/wasm --release",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
