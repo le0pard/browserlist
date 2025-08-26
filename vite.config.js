@@ -9,10 +9,7 @@ export default defineConfig({
     cssCodeSplit: false,
     rollupOptions: {
       output: {
-        assetFileNames: (assetInfo) => {
-          if (/\.wasm$/i.test(assetInfo.name)) {
-            return 'assets/[name][extname]'
-          }
+        assetFileNames: () => {
           return 'assets/[name]-[hash][extname]'
         }
       }
@@ -29,7 +26,7 @@ export default defineConfig({
       strategies: 'injectManifest',
       injectManifest: {
         maximumFileSizeToCacheInBytes: 5000000,
-        globPatterns: ['**/*.{css,html,ico,png,svg,webmanifest}']
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,webmanifest,wasm}']
       },
       includeAssets: [],
       manifest: {
