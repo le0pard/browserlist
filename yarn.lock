@@ -2908,7 +2908,7 @@ __metadata:
     eslint-plugin-svelte: "npm:^2.46.1"
     focus-visible: "npm:^5.2.1"
     normalize.css: "npm:^8.0.1"
-    postcss: "npm:^8.5.6"
+    postcss: "npm:^8.5.10"
     postcss-import: "npm:^16.1.1"
     postcss-nested: "npm:^7.0.2"
     postcss-preset-env: "npm:^10.6.1"
@@ -5996,6 +5996,17 @@ __metadata:
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10/6d7e21a772e8b05bf102636918654dac097bac013f0dc8346b72ac3604fc16829646f94ea862acccd8f82e910b00e2c11c1f0ea276543565d278c7ca35516a7c
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.10":
+  version: 8.5.14
+  resolution: "postcss@npm:8.5.14"
+  dependencies:
+    nanoid: "npm:^3.3.11"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10/2e3f4dea69692918fe9df5402beb0e54df84499995a094f2fbf63d1a9e38bc1b7a42854df47f09e02593213e01a5eb0627b1d1bd6d1b0ea90767b2e072f7167c
   languageName: node
   linkType: hard
 
